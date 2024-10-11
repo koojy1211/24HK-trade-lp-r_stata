@@ -1,0 +1,36 @@
+File Description
+
+
+
+
+
+* PRE_w.R : `FLOW` 데이터 전처리 코드
+
+- 사용 파일: 'Trade Flow' 내에 있는 파일 전체 (DOTS: IMF Direction of Trade Statistics)
+- Bilateral Openness: trade flows between country i and country j in year t
+
+- DATA_Trade.csv 생성
+
+
+
+* 데이터
+
+- AREA.xlsx (World Bank)
+- BOR.xlsx (수기)
+- D.xlsx (EM-DAT - The international disaster database)
+- DIST.xlsx (수기 / 수도 기준 하버사인 공식 이용)
+- FINDIST.xlsx (andrewkrose.net_datafr1의 Idistmbc)
+- POP.xlsx (World Bank)
+
+
+
+* PRE.R : 도구변수 생성에 사용할 데이터 전처리 코드 (위 6개 데이터 및 DATA_Trade 병합 & 전처리)
+
+Final_DATA.csv : 도구변수 생성에 사용할 모든 데이터가 포함된 최종 파일
+- year, country_i, country_j, POP_i, POP_j, DIST_ij, BOR_ij, D_j_t, AREA_j, FLOW, FINDIST_j
+
+
+
+* IV.do : Multilateral Openness 생성 파일 (PPML 방법을 이용한 축약형 중력 모형 추정)
+
+DATA_IV.csv : 추정된 predicted openness/omega_hat & multilateral openness) 포함한 파일
