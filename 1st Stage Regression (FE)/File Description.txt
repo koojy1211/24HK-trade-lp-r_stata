@@ -1,0 +1,66 @@
+File Description
+- for the Relevance Test of Generated IV
+
+
+
+
+
+* 데이터 (전처리 이전 파일)
+
+
+1) TRADE.xlsx
+
+- `TRADE`
+Sum of Imports and Exports as a share of GDP (World Development Indicators, World Bank)
+
+
+2) CONTROL.xlsx (World Development Indicators, World Bank)
+
+- `GDPpc`
+Real GDP per capita : GDP per capita (constant 2015 US$) (control for any distributional effect due to different income levels)
+
+- `lnPOP` & `POP`
+Population : Population, total
+
+- `AGE_dep`
+Age Dependency Ratio: Age dependency ratio (% of working-age population) (proportion of dependents per 100 of working age population, where citizens younger than 15 or older than 64 are defined as the dependent part)
+
+
+3) FDI.xlsx
+
+- `FDI_pct`
+Foreign direct investment, net inflows (% of GDP)
+Foreign direct investment, net outflows (% of GDP)
+전처리 이후 위 두 Series의 합계를 `FDI_pct` 이름으로 사용
+
+
+4) DATA_IV.csv
+
+- `OPEN`
+STATA로 생성한 도구변수 파일 (도구변수 생성에 필요했던 데이터까지 모두 포함)
+
+
+
+
+
+* PRE_t.R - 데이터 전처리 R 코드
+
+KOF Globalisation Indices (Political, Social) 수집 코드 포함
+
+
+
+
+
+* 데이터 (전처리 이후 파일)
+
+FDI.csv : `FDI_pct`, `FDI_BoP` 포함 전처리 이후의 FDI 데이터
+
+DATA.csv : Relevance Test에 필요한 데이터에 대해 전처리를 진행한 후 모아둔 깔끔한 데이터 파일
+
+
+
+
+
+* IV_1S.R - 도구 변수(TRADE_IV) 생성 R 코드
+
+TRADE_IV.csv : 오로지 도구 변수만 갖고 있는 데이터 파일
