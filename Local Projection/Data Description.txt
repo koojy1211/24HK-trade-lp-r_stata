@@ -1,0 +1,4 @@
+Data Description
+
+MARKUP: Jan De Loecker & J. Eeckhout (2020)
+GINI, TOP1, TOP10, BOT50: World Inequality Database (https://wid.world/data/)
