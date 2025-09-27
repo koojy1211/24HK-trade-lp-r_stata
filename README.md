@@ -1,4 +1,4 @@
-## 🥈 22nd KED Economics Essay Competition
+## 🥇 22nd KED Economics Essay Competition
 
 **[수상 내역]** 제22회 한국경제신문 경제논문 공모전 대상 (1위) \
 **[연구]** 무역 개방도와 소득 불평등의 상관관계 분석 - 도구변수와 마크업 동학을 활용하여 - \
