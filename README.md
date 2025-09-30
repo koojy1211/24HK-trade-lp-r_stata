@@ -20,3 +20,4 @@
 
 https://webzine.skku.edu/skkuzine/section/people01.do?mode=list&articleNo=123083 \
 https://www.hankyung.com/article/2024112788721
+https://www.hkessay.co.kr/bbs/board.php?bo_table=paperprize2025&wr_id=41
